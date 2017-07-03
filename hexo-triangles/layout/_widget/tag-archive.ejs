@@ -1,0 +1,8 @@
+<h4>Tags - Archive</h4>
+<% if (site.tags.length){ %>
+    <%- list_tags({show_count: false, style: "text", separator: " - "}) %>
+<% } %>
+<br><br>
+<% if (site.posts.length){ %>
+    <%- list_archives({show_count: false, style: "text", separator: "<br>"}) %>
+<% } %>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="<%= config.title %>"/>
+    <meta property="og:image" content="<%= config.image %>"/>
+    <meta property="og:site_name" content="<%= config.site_name %>"/>
+    <meta property="og:description" content="<%= config.description %>"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+  <%
+  var title = page.title;
+  var description = page.description;
+
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+
+  <%- css('css/bootstrap.min') %>
+  <%- css('css/style') %>
+  <%- css('css/devicon') %>
+  <%- css('css/devicon-colors') %>
+  
+  <%- partial('google-analytics') %>
+</head>
