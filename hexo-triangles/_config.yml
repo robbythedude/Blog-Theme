@@ -1,3 +1,21 @@
-# Sidebar
+# Sidebar Info
+author_description: Amature Tourist
+topics: Places - Events - Culture
+
+link_twitter: https://twitter.com/robbythedude
+link_github: https://github.com/robbythedude
+link_linkedin: https://www.linkedin.com/in/robsteineriii/
+link_stack: https://stackoverflow.com/users/story/1888609
+
+link_unreal: N/A
+link_construct: N/A
+link_blender: N/A
+link_soundcloud: https://soundcloud.com/clarksteinberg
+link_handyman: N/A
+link_travel: http://travel.brogrammerrob.com/
+link_broken: http://brogrammerrob.com/construction.html
+
+# Widgets  
 widgets:
 - tag-archive
+
