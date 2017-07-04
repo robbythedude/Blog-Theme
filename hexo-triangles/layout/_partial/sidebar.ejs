@@ -12,15 +12,7 @@
 		</div>
 
 		<div class="text-center" style="margin-top: 20px;">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="hobbiesbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hobbies</button>
-			<div class="slidediv" style="display: none;">				
-				<a href="<%= theme.link_broken %>" ><%- image_tag('images/unreal.png', {height:29, width:29, class:'hobby-icon'}) %></a>
-				<a href="<%= theme.link_broken %>" ><%- image_tag('images/construct.png', {height:29, width:29, class:'hobby-icon'}) %></a></br>
-				<a href="<%= theme.link_broken %>" ><%- image_tag('images/blender.png', {height:29, width:29, class:'hobby-icon'}) %></a>
-				<a href="<%= theme.link_soundcloud %>" target="blank"><%- image_tag('images/soundcloud.png', {height:29, width:29, class:'hobby-icon'}) %></a></br>
-				<a href="<%= theme.link_broken %>" ><%- image_tag('images/handyman.png', {height:29, width:29, class:'hobby-icon'}) %></a>
-				<a href="<%= theme.link_travel %>" ><%- image_tag('images/travel.png', {height:29, width:29, class:'hobby-icon'}) %></a>
-			</div>
+			<%- partial('_partial/hobbies') %>
 		</div>
 		<div class="text-center" style="margin-top: 20px;">
 			<% theme.widgets.forEach(function(widget){ %>
