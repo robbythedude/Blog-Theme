@@ -5,10 +5,7 @@
 		<h3><%= theme.topics %></h3>
 
 		<div class="text-center" style="margin-top: 20px;">
-			<a href="<%= theme.link_twitter %>" class="cta-icon"><i class="devicon-twitter-plain colored"></i></a>
-			<a href="<%= theme.link_github %>" class="cta-icon"><i class="devicon-github-plain colored"></i></a>
-			<a href="<%= theme.link_linkedin %>" ><%- image_tag('images/linkedin.png', {height:29, width:29, class:'hobby-iconX2'}) %></a>
-			<a href="<%= theme.link_stack %>" ><%- image_tag('images/stackoverflow.png', {height:29, width:29, class:'hobby-iconX2'}) %></a>
+			<%- partial('_partial/social') %>
 		</div>
 
 		<div class="text-center" style="margin-top: 20px;">
