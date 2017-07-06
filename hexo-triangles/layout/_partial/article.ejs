@@ -1,18 +1,15 @@
 <div class="row work-item-row">
   <div class="col-sm-8 col-sm-offset-2 project">
-    <article id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
+    <article>
       <div>
-        <%- partial('post/date', {date_format: null}) %>
-        <%- partial('post/category') %>
-      </div>
-      <div>
-        <%- partial('post/gallery') %>
         <% if (post.link || post.title){ %>
           <header>
             <%- partial('post/title') %>
           </header>
         <% } %>
-        <div itemprop="articleBody">
+        <%- partial('post/date', {date_format: null}) %>
+        <br><br>
+        <div>
           <% if (post.excerpt && index){ %>
             <%- post.excerpt %>
             <% if (theme.excerpt_link){ %>
