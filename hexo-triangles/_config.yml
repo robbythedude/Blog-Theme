@@ -17,6 +17,8 @@ link_handyman: N/A
 link_travel: http://travel.brogrammerrob.com/
 link_broken: http://brogrammerrob.com/construction.html
 
+google_analytics: true
+
 # Widgets  
 widgets:
 - tag-archive
